@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FC6719;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FC6719;
+    --foreground: #171717;
+  }
+}
+
+@font-face {
+  font-family: 'ZwiftSprint';
+  src: url('/ZwiftSprint-Regular.woff2') format('woff2'),  /* Corrected format */
+       url('/ZwiftSprint-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-custom {
+  font-family: 'ZwiftSprint', sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'ZwiftSprint', Arial, sans-serif;  /* Removed extra semicolon */
+}
